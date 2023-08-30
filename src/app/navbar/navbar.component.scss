@@ -1,0 +1,33 @@
+nav {
+    background-color: lightgrey;
+    min-height: 100%;
+    width: 20vw;
+    padding: 2% 1%;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: 1.5% 0;
+}
+
+a:visited {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod
+}
+
+.active {
+    border-bottom: 2px solid goldenrod;
+}

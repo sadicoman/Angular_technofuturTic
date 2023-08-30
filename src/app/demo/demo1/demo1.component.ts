@@ -6,11 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./demo1.component.scss'],
 })
 export class Demo1Component {
-  valeur : number = 0;
-  changePlus(){
-    this.valeur++;
+  // Property binding
+  prenom: string = 'Seb';
+  prenom2: string = '';
+
+  //Event binding
+  jour: string = '';
+
+  //Attribute binding
+  id: string = 'ma-div';
+  isActive: boolean = true;
+
+  //Méthodes
+  changerJour(j: string): void {
+    this.jour = j;
   }
-  changeMoins(){
-    this.valeur--;
+
+  toggleActive(): void {
+    this.isActive = !this.isActive;
   }
 }
