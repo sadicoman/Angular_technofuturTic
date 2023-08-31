@@ -1,0 +1,53 @@
+<div class="chapter">
+  <h1>Liste des tâches</h1>
+  <!-- ngfor -->
+  <h2>ngfor</h2>
+  <ul>
+    <li *ngFor="let tache of taches">
+      <span [ngClass]="{ complet: tache.complet }">{{ tache.nom }} </span>
+      <span
+        >Est complet ?<input type="checkbox" [(ngModel)]="tache.complet"
+      /></span>
+    </li>
+  </ul>
+  <!-- ngif -->
+  <hr>
+  <h2>ngif</h2>
+  <ul>
+    <li *ngFor="let tache of taches">
+      <div *ngIf="tache.complet; else elseblock" >
+        <span [ngClass]="{ complet: tache.complet }">{{ tache.nom }} </span>
+        <span
+          >OK !<input type="checkbox" [(ngModel)]="tache.complet"
+        /></span>
+      </div>
+	  <ng-template #elseblock>
+		<p [ngClass]="{'non-complet': !tache.complet }">La tâche n'est pas complete !</p>
+	  </ng-template>
+    </li>
+  </ul>
+  <hr>
+  <h3>Tache à réalisé</h3>
+  <ul>
+    <li *ngFor="let tache of taches">
+      <div *ngIf="!tache.complet">
+        <span [ngClass]="{ complet: tache.complet }">{{ tache.nom }} </span>
+        <span
+          >Est complet ?<input type="checkbox" [(ngModel)]="tache.complet"
+        /></span>
+      </div>
+    </li>
+  </ul>
+  <h3>Tache réalisé</h3>
+  <ul>
+    <li *ngFor="let tache of taches">
+      <div *ngIf="tache.complet">
+        <span [ngClass]="{ complet: tache.complet }">{{ tache.nom }} </span>
+        <span
+          >Est complet ?<input type="checkbox" [(ngModel)]="tache.complet"
+        /></span>
+      </div>
+    </li>
+  </ul>
+  <hr>
+</div>

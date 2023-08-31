@@ -11,6 +11,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Demo2Component } from './demo/demo2/demo2.component';
 import { SharedModule } from './shared/shared.module';
 import { Exercice2Component } from './exercices/exercice2/exercice2.component';
+import { DemoDirectiveComponent } from './demo/demo-directive/demo-directive.component';
+import { DemoDirective2Component } from './demo/demo-directive2/demo-directive2.component';
+import { ArticleListComponent } from './exercices/article-list/article-list.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { Exercice2Component } from './exercices/exercice2/exercice2.component';
     Exercice1Component,
     NavbarComponent,
     Demo2Component,
-    Exercice2Component
+    Exercice2Component,
+    DemoDirectiveComponent,
+    DemoDirective2Component,
+    ArticleListComponent,
   ],
   imports: [
     BrowserModule,

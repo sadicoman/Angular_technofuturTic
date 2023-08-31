@@ -1,0 +1,32 @@
+<div class="chapter">
+  <h1>Article-list !</h1>
+
+  <input
+    type="text"
+    [(ngModel)]="recherche"
+    placeholder="Rechercher par titre"
+  />
+
+  <button (click)="afficherTout = !afficherTout">
+    {{
+      afficherTout
+        ? "Afficher seulement les articles publiés"
+        : "Afficher tous les articles"
+    }}
+  </button>
+
+  <ul>
+    <li *ngFor="let article of articles">
+      <div
+        *ngIf="
+          (afficherTout || article.estPublie) &&
+          (article.titre.toLowerCase().includes(recherche.toLowerCase()) ||
+            !recherche)
+        "
+      >
+        <h2>{{ article.titre }}</h2>
+        <p>{{ article.description }}</p>
+    </div>
+    </li>
+  </ul>
+</div>
