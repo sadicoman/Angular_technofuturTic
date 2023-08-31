@@ -10,6 +10,7 @@ import { Exercice1Component } from './exercices/exercice1/exercice1.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Demo2Component } from './demo/demo2/demo2.component';
 import { SharedModule } from './shared/shared.module';
+import { Exercice2Component } from './exercices/exercice2/exercice2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SharedModule } from './shared/shared.module';
     Demo1Component,
     Exercice1Component,
     NavbarComponent,
-    Demo2Component
+    Demo2Component,
+    Exercice2Component
   ],
   imports: [
     BrowserModule,

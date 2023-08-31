@@ -1,0 +1,9 @@
+<div class="chapter">
+  <h2>Chronomètre</h2>
+  <button (click)="start()" [disabled]="timer">Start</button>
+  <button (click)="pause()" [disabled]="!timer">Pause</button>
+  <button (click)="reset()" [disabled]="timer || elapsedTime == 0">Reset</button>
+  <p>{{formatTime()}}</p>
+  <p>{{elapsedTime | convertTime}}</p>
+  <button (click)="toggle()">Start/Stop</button>
+</div>
