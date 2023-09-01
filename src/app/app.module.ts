@@ -14,7 +14,10 @@ import { Exercice2Component } from './exercices/exercice2/exercice2.component';
 import { DemoDirectiveComponent } from './demo/demo-directive/demo-directive.component';
 import { DemoDirective2Component } from './demo/demo-directive2/demo-directive2.component';
 import { ArticleListComponent } from './exercices/article-list/article-list.component';
-
+import { ParentComponentComponent } from './demo/demonInputOutput/parent-component/parent-component.component';
+import { ChildComponentComponent } from './demo/demonInputOutput/child-component/child-component.component';
+import { ChildComponent } from './demo/v-2/child/child.component';
+import { ParentComponent } from './demo/v-2/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +31,13 @@ import { ArticleListComponent } from './exercices/article-list/article-list.comp
     DemoDirectiveComponent,
     DemoDirective2Component,
     ArticleListComponent,
+    ChildComponentComponent,
+    ParentComponentComponent,
+    ChildComponent,
+    ParentComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    SharedModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

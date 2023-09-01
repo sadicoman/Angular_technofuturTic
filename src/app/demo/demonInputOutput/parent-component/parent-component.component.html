@@ -1,0 +1,14 @@
+<!-- Étape 3 : Utilisez le composant enfant dans le composant parent -->
+<!-- Dans le fichier parent.component.html, incluez le composant enfant -->
+<div class="chapter">
+  <h2>Composant Parent</h2>
+  <!-- Utilisation du composant enfant -->
+  <!-- [messageFromParent]="message" pour passer des données du parent à l'enfant -->
+  <!-- (messageToParent)="handleMessage($event)" pour écouter les événements de l'enfant -->
+  <app-child-component
+    [messageFromParent]="message"
+    (messageToParent)="handleMessage($event)"
+  ></app-child-component>
+  <!-- Affichage du message reçu du composant enfant -->
+  <p>Message reçu du composant enfant : {{ receivedMessage }}</p>
+</div>
