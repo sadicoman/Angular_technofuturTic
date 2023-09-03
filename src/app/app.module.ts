@@ -18,6 +18,13 @@ import { ParentComponentComponent } from './demo/demonInputOutput/parent-compone
 import { ChildComponentComponent } from './demo/demonInputOutput/child-component/child-component.component';
 import { ChildComponent } from './demo/v-2/child/child.component';
 import { ParentComponent } from './demo/v-2/parent/parent.component';
+import { InputOuputExercicesComponent } from './exercices/InputOuput/input-ouput-exercices/input-ouput-exercices.component';
+import { ParentExo1Component } from './exercices/InputOuput/ComposantDeBoutonCliquable/parent/parent.component';
+import { ChildExo1Component } from './exercices/InputOuput/ComposantDeBoutonCliquable/child/child.component';
+import { ParentExo2Component } from './exercices/InputOuput/ComposantDeCompteur/parent/parent.component';
+import { ChildExo2Component } from './exercices/InputOuput/ComposantDeCompteur/child/child.component';
+import { ChildExo3Component } from './exercices/InputOuput/ComposantDeFormulaireDeCommentaire/child/child.component';
+import { ParentExo3Component } from './exercices/InputOuput/ComposantDeFormulaireDeCommentaire/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +42,13 @@ import { ParentComponent } from './demo/v-2/parent/parent.component';
     ParentComponentComponent,
     ChildComponent,
     ParentComponent,
+    InputOuputExercicesComponent,
+    ParentExo1Component,
+    ChildExo1Component,
+    ParentExo2Component,
+    ChildExo2Component,
+    ChildExo3Component,
+    ParentExo3Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],

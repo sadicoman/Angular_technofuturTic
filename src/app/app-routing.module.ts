@@ -10,6 +10,7 @@ import { DemoDirective2Component } from './demo/demo-directive2/demo-directive2.
 import { ArticleListComponent } from './exercices/article-list/article-list.component';
 import { ParentComponentComponent } from './demo/demonInputOutput/parent-component/parent-component.component';
 import { ParentComponent } from './demo/v-2/parent/parent.component';
+import { InputOuputExercicesComponent } from './exercices/InputOuput/input-ouput-exercices/input-ouput-exercices.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,10 +20,11 @@ const routes: Routes = [
   { path: 'demo-directive', component: DemoDirectiveComponent },
   { path: 'demo-directive2', component: DemoDirective2Component },
   { path: 'demo-inpoutOutput-parent', component: ParentComponentComponent },
-  { path: 'demo-inpoutOutput-v2', component:ParentComponent},
+  { path: 'demo-inpoutOutput-v2', component: ParentComponent },
   { path: 'exercice1', component: Exercice1Component },
   { path: 'exercice2', component: Exercice2Component },
   { path: 'article-list', component: ArticleListComponent },
+  { path: 'input-output-exercice', component: InputOuputExercicesComponent },
 ];
 
 @NgModule({

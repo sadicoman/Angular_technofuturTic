@@ -1,12 +1,14 @@
-<h2>Composant home</h2>
-<p>Bonjour, je m'appel {{ monNom }}</p>
-<p>J'ai {{ monAge }} ans.</p>
-<p>Je suis née le {{ maDateNaissance | date : "fullDate" }}.</p>
-<!-- Binding (liaison) one-way : Lecture de valeur se trouvant dans le fichier TS -->
-<p>Bonjour, je m'appel {{ monTableau[0] }}</p>
+<div class="chapter">
+  <h2>Composant home</h2>
+  <p>Bonjour, je m'appel {{ monNom }}</p>
+  <p>J'ai {{ monAge }} ans.</p>
+  <p>Je suis née le {{ maDateNaissance | date : "fullDate" }}.</p>
+  <!-- Binding (liaison) one-way : Lecture de valeur se trouvant dans le fichier TS -->
+  <p>Bonjour, je m'appel {{ monTableau[0] }}</p>
 
-<button (click)="changeNom()">Click ici !</button>
-<!-- Event Binding (liaison d'evenement) : lier l'execution d'une methode du fichier .ts à un evenement javascript -->
+  <button (click)="changeNom()">Click ici !</button>
+  <!-- Event Binding (liaison d'evenement) : lier l'execution d'une methode du fichier .ts à un evenement javascript -->
 
-<input type="text" [(ngModel)]="monNom">
-<!-- Binding Two-Ways : Liaison permettant la lecture et l'écriture d'une variable -->
+  <input type="text" [(ngModel)]="monNom" />
+  <!-- Binding Two-Ways : Liaison permettant la lecture et l'écriture d'une variable -->
+</div>
