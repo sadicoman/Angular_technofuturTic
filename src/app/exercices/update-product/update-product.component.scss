@@ -1,3 +1,14 @@
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    legend {
+        font-weight: bold;
+    }
+}
+
 /* Conteneur du formulaire */
 form {
     width: 100%;
@@ -7,25 +18,25 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Champs du formulaire */
-  input {
+}
+
+/* Champs du formulaire */
+input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  /* Label du formulaire */
-  label {
+}
+
+/* Label du formulaire */
+label {
     font-weight: bold;
     margin-right: 10px;
-  }
-  
-  /* Bouton de soumission */
-  button[type="submit"] {
+}
+
+/* Bouton de soumission */
+button[type="submit"] {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -33,14 +44,14 @@ form {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  
+
     &:hover {
-      background-color: #0056b3;
+        background-color: #0056b3;
     }
-  }
-  
-  /* Bouton pour récupérer les informations */
-  button {
+}
+
+/* Bouton pour récupérer les informations */
+button {
     background-color: #28a745;
     color: white;
     padding: 10px 20px;
@@ -48,14 +59,13 @@ form {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  
+
     &:hover {
-      background-color: #218838;
+        background-color: #218838;
     }
-  }
-  
-  /* Conteneur pour la récupération des informations */
-  div {
+}
+
+/* Conteneur pour la récupération des informations */
+div {
     margin-top: 20px;
-  }
-  
+}

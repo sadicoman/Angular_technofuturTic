@@ -29,6 +29,8 @@ import { DemoServiceComponent } from './demo/demo-service/demo-service.component
 import { ProductListComponentComponent } from './exercices/product-list-component/product-list-component.component';
 import { FormulaireComponent } from './demo/formulaire/formulaire.component';
 import { UpdateProductComponent } from './exercices/update-product/update-product.component';
+import { RoutingComponent } from './demo/routing/routing.component';
+import { StorageComponent } from './demo/storage/storage.component';
 
 @NgModule({
     declarations: [
@@ -57,6 +59,8 @@ import { UpdateProductComponent } from './exercices/update-product/update-produc
         ProductListComponentComponent,
         FormulaireComponent,
         UpdateProductComponent,
+        RoutingComponent,
+        StorageComponent,
     ],
     imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule, ReactiveFormsModule],
     providers: [],

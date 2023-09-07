@@ -206,3 +206,13 @@ h6 {
 .non-complet {
     color: red;
 }
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    legend {
+        font-weight: bold;
+    }
+}
