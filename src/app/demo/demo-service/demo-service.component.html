@@ -1,0 +1,13 @@
+<div class="chapter">
+    <h2>Liste des livres</h2>
+    <ul>
+        <li *ngFor="let book of books; let i = index">
+            {{ book }}
+            <button (click)="removeBook(i)">Supprimer</button>
+        </li>
+    </ul>
+    <div>
+        <input type="text" [(ngModel)]="newBook" placeholder="Nouveau livre" />
+        <button (click)="addNewBook()">Ajouter</button>
+    </div>
+</div>

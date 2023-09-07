@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Demo1Component } from './demo/demo1/demo1.component';
 import { Exercice1Component } from './exercices/exercice1/exercice1.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,33 +25,41 @@ import { ParentExo2Component } from './exercices/InputOuput/ComposantDeCompteur/
 import { ChildExo2Component } from './exercices/InputOuput/ComposantDeCompteur/child/child.component';
 import { ChildExo3Component } from './exercices/InputOuput/ComposantDeFormulaireDeCommentaire/child/child.component';
 import { ParentExo3Component } from './exercices/InputOuput/ComposantDeFormulaireDeCommentaire/parent/parent.component';
+import { DemoServiceComponent } from './demo/demo-service/demo-service.component';
+import { ProductListComponentComponent } from './exercices/product-list-component/product-list-component.component';
+import { FormulaireComponent } from './demo/formulaire/formulaire.component';
+import { UpdateProductComponent } from './exercices/update-product/update-product.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    Demo1Component,
-    Exercice1Component,
-    NavbarComponent,
-    Demo2Component,
-    Exercice2Component,
-    DemoDirectiveComponent,
-    DemoDirective2Component,
-    ArticleListComponent,
-    ChildComponentComponent,
-    ParentComponentComponent,
-    ChildComponent,
-    ParentComponent,
-    InputOuputExercicesComponent,
-    ParentExo1Component,
-    ChildExo1Component,
-    ParentExo2Component,
-    ChildExo2Component,
-    ChildExo3Component,
-    ParentExo3Component,
-  ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        Demo1Component,
+        Exercice1Component,
+        NavbarComponent,
+        Demo2Component,
+        Exercice2Component,
+        DemoDirectiveComponent,
+        DemoDirective2Component,
+        ArticleListComponent,
+        ChildComponentComponent,
+        ParentComponentComponent,
+        ChildComponent,
+        ParentComponent,
+        InputOuputExercicesComponent,
+        ParentExo1Component,
+        ChildExo1Component,
+        ParentExo2Component,
+        ChildExo2Component,
+        ChildExo3Component,
+        ParentExo3Component,
+        DemoServiceComponent,
+        ProductListComponentComponent,
+        FormulaireComponent,
+        UpdateProductComponent,
+    ],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule, ReactiveFormsModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}

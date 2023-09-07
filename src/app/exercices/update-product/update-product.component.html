@@ -1,0 +1,34 @@
+<div class="chapter">
+    <!-- Formulaire de mise à jour du produit -->
+    <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+        <div>
+            <label for="id">ID du produit</label>
+            <input formControlName="id" id="id" type="text" />
+        </div>
+        <div>
+            <label for="nom">Nom du produit</label>
+            <input formControlName="nom" id="nom" type="text" />
+        </div>
+        <div>
+            <label for="description">Description du produit</label>
+            <input formControlName="description" id="description" type="text" />
+        </div>
+        <div>
+            <label for="prix">Prix du produit</label>
+            <input formControlName="prix" id="prix" type="number" />
+        </div>
+        <button type="submit">Mettre à jour</button>
+    </form>
+
+    <!-- Section pour récupérer les informations du produit par ID -->
+    <div>
+        <input
+            type="number"
+            [(ngModel)]="productId"
+            placeholder="ID du produit à récupérer"
+        />
+        <button (click)="onFetch()">
+            Récupérer les informations du produit
+        </button>
+    </div>
+</div>

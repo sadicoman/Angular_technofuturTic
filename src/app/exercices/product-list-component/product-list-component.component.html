@@ -1,0 +1,40 @@
+<div class="chapter">
+    <ul>
+        <li *ngFor="let product of productService.getProduits()">
+            {{ product.nom }} {{ product.prix }}
+            <button (click)="deleteProduct(product.id)">Supprimer</button>
+            <button (click)="editProduct(product)">Éditer</button>
+            <div *ngIf="showUpdateForm">Je suis la !!!</div>
+        </li>
+    </ul>
+
+    <fieldset>
+        <legend>Ajout produit</legend>
+        <div>Nom : <input type="text" [(ngModel)]="newProductName" /></div>
+        <div>
+            Description :
+            <input type="text" [(ngModel)]="newProductDescription" />
+        </div>
+        <div>Prix : <input type="number" [(ngModel)]="newProductPrice" /></div>
+        <div>
+            <button (click)="addProduct()">Ajouter</button>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mis a jour produit</legend>
+        <div>
+            Nom : <input type="text" [(ngModel)]="updatedNewProductName" />
+        </div>
+        <div>
+            Description :
+            <input type="text" [(ngModel)]="updatedNewProductDescription" />
+        </div>
+        <div>
+            Prix : <input type="number" [(ngModel)]="updatedNewProductPrice" />
+        </div>
+        <div>
+            <button (click)="updateProduct()">Update</button>
+        </div>
+    </fieldset>
+</div>
